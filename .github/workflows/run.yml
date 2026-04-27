@@ -5,6 +5,10 @@ on:
     - cron: '7 1,4,7,10,12,14,23 * * *'
   workflow_dispatch:
 
+# 解决方案
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
